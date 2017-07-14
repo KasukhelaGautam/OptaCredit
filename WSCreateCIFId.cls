@@ -307,7 +307,7 @@ global class WSCreateCIFId {
                                          FROM   		Account 
                                          WHERE 			Id =: accountDetailsForAnIndividual.Id 
                                          LIMIT 1];
-            
+            /*Create a contact record*/
             Contact contactDetailsForAnIndividual = new Contact(FirstName = firstName, Middle_Name__c = middleName, 
                                                                 LastName = lastName, Email = emailID,
                                                                 MobilePhone = mobileNumber,
