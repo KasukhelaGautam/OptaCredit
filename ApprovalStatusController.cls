@@ -17,7 +17,7 @@ global class ApprovalStatusController {
     String 		phoneNumber;
     String		accountName;
     String		message;
-    
+    //Adding comments to this file in the branch
     applicationList    =  [SELECT    Prospect_Number__c,Stage_Processing_Start_Date_App_Status__c,genesis__Account__r.Name,genesis__Account__r.Phone
                  		   FROM    	 genesis__Applications__c
                  		   WHERE     Id =: applicationID
