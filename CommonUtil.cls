@@ -1,5 +1,6 @@
 public class CommonUtil {
     public static String fetchAllFields(String type){
+        //Adding comments to the file in a branch
         Schema.sObjectType sObjectType = Schema.getGlobalDescribe().get(type);           
         Map<String,Schema.SObjectField> fieldsMap = sObjectType.getDescribe().fields.getMap();
         String fields = '';
